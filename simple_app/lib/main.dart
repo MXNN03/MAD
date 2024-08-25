@@ -6,9 +6,9 @@ void main() {
     title: "Simple App",
     home: Scaffold(
       appBar: AppBar(
-        title: Text("Simple App"),
+        title: const Text("Simple App"),
       ),
-      body: Menus(),
+      body: const Menus(),
     ),
   ));
 }
