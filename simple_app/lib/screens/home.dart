@@ -15,7 +15,7 @@ class Home extends StatelessWidget {
           children: [
             TextButton(
               onPressed: () {
-                print("Text Button on Pressed");
+                print("Text Button Pressed");
               },
               child: Text(
                 "Text",
@@ -30,7 +30,7 @@ class Home extends StatelessWidget {
                   backgroundColor: Colors.amber.shade100,
                   foregroundColor: Colors.brown),
               onPressed: () {
-                print("Text Button on Pressed");
+                print("FilledButton Pressed");
               },
               child: Text("Filled",
                   style: TextStyle(
@@ -38,26 +38,26 @@ class Home extends StatelessWidget {
                   )),
             ),
             ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.green,
-                    foregroundColor: Colors.white,
-                    shadowColor: Colors.red,
-                    elevation: 5),
-                onPressed: () {
-                  print("ElevatedButton Pressed");
-                },
-                child: Text("Elevated")),
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.green,
+                  foregroundColor: Colors.white,
+                  shadowColor: Colors.red,
+                  elevation: 5),
+              onPressed: () {
+                print("ElevatedButton Pressed");
+              }, 
+              child: Text("Elevated")),
             OutlinedButton(
-
-                style: ElevatedButton.styleFrom(
-                    side: BorderSide(
-                      color: Colors.red, 
-                      width: 3),
-                ),
-                onPressed: () {
-                  print("OutlinedButton Pressed");
-                },
-                child: Text("Outlined")),
+              
+              style: OutlinedButton.styleFrom(
+                  side: BorderSide(
+                    color: Colors.red, 
+                    width: 3),
+              ),
+              onPressed: () {
+                print("OutlinedButton Pressed");
+              }, 
+              child: Text("Outlined")),
           ],
         ),
       ),

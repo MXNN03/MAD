@@ -8,28 +8,28 @@ class Menus extends StatefulWidget {
 }
 
 class _MenusState extends State<Menus> {
-  List<String> itemes = <String>[
-    'item 1',
-    'item 2',
-    'item 3',
-    'item 4',
-    'item 5',
-    'item 6',
-    'item 7',
-    'item 8',
-    'item 9',
-    'item 10',
+  List<String> items = <String>[
+    'Item 1',
+    'Item 2',
+    'Item 3',
+    'Item 4',
+    'Item 5',
+    'Item 6',
+    'Item 7',
+    'Item 8',
+    'Item 9',
+    'Item 10'
   ];
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      itemCount: itemes.length,
+      itemCount: items.length,
       itemBuilder: (BuildContext context, int index) {
         return ListTile(
-          title: Text('${itemes[index]}'),
+          title: Text('${items[index]}'),
           onLongPress: () {
             setState(() {
-              itemes.removeAt(index);
+              items.removeAt(index);
             });
           },
         );
